@@ -18,6 +18,7 @@ newTaskElementSend.addEventListener('click', function () {
 })
 
 const price = newtaskkilometers * 0.21;
+const FinalPrice = price - discount
 let discount = 0;
 
 function ticketPrice(ages, kilometers) {
@@ -34,6 +35,6 @@ function ticketPrice(ages, kilometers) {
     return finalticketPrice
 }
 
-const FinalPrice = price - discount
+
 
 console.log(FinalPrice.toFixed(2))
