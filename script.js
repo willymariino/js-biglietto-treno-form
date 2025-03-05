@@ -28,8 +28,11 @@ function ticketPrice(ages, kilometers) {
         discount = price * 0.4
     }
 
+
+
     return ticketPrice
 }
 
 const FinalPrice = price - discount
+console.log(ticketPrice())
 console.log(FinalPrice.toFixed(2))
