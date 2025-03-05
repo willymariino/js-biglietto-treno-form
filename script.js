@@ -13,7 +13,7 @@ newTaskElementSend.addEventListener('click', function () {
     console.log('ho cliccato sul bottone')
     console.log(newTaskElementName.value)
     console.log(newTaskElementAge.value)
-    console.log(newtaskkilometers)
+    console.log(newtaskkilometers.value)
 })
 
 const price = newtaskkilometers * 0.21;
