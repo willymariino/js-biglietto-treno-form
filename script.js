@@ -5,3 +5,9 @@ const newTaskElementSend = document.getElementById("send-task")
 console.log(newTaskElementAge);
 console.log(newTaskElementAge);
 console.log(newTaskElementSend);
+
+newTaskElementSend.addEventListener('click', function () {
+    console.log('ho cliccato sul bottone')
+    console.log(newTaskElementName.value)
+    console.log(newTaskElementAge.value)
+})
