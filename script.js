@@ -16,15 +16,18 @@ newTaskElementSend.addEventListener('click', function () {
     console.log(newtaskkilometers.value)
     //console.log(FinalPrice.toFixed(2))
 
-
-    const price = parseInt(newtaskkilometers.value) * 0.21
+    // convertire gli input in numeri
+    const age = parseInt(newTaskElementAge.value)
+    const kilometers = parseInt(newtaskkilometers.value)
     let discount = 0
 
+    const price = kilometers * 0.21
 
-    if (newTaskElementAge < 18) {
+
+    if (age < 18) {
         discount = price * 0.2
     }
-    else if (newTaskElementAge > 65) {
+    else if (age > 65) {
         discount = price * 0.4
     }
 
