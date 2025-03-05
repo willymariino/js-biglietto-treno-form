@@ -4,10 +4,7 @@ const newtaskkilometers = document.getElementById('new-task-kilometers')
 const newTaskElementSend = document.getElementById("send-task")
 
 
-console.log(newTaskElementName)
-console.log(newTaskElementAge)
-console.log(newtaskkilometers)
-console.log(newTaskElementSend)
+
 
 newTaskElementSend.addEventListener('click', function () {
     console.log('ho cliccato sul bottone')
