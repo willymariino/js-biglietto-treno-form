@@ -2,7 +2,7 @@ const newTaskElementName = document.getElementById("new-task-name")
 const newTaskElementAge = document.getElementById("new-task-age")
 const newtaskkilometers = document.getElementById('new-task-kilometers')
 const newTaskElementSend = document.getElementById("send-task")
-
+const ticketPriceElement = document.getElementById('ticket-price')
 
 
 
@@ -16,18 +16,33 @@ newTaskElementSend.addEventListener('click', function () {
     // convertire gli input in numeri
     const age = parseInt(newTaskElementAge.value)
     const kilometers = parseInt(newtaskkilometers.value)
+
+    /*l'utente inserisce età e chilometri nei campi di input
+    quando clicca il bottone li leggiamo e li convertiamo in numeri con le variabili sopra
+  salvo il risultato della funzione per il calcolo biglietto, nella variabile FinalPrice */
+    const FinalPrice = calculateTicketPrice(age, kilometers)
+
+
+    // stampa il prezzo del biglietto
+    console.log("prezzo del biglietto: €" + FinalPrice.toFixed(2))
+
+    //mostra il risultato in pagina
+    ticketPriceElement.textContent = "prezzo del biglietto: €" + FinalPrice.toFixed(2)
+
+})
+
+// aggiungo la funzione per calcolare il prezzo del biglietto con sconti
+
+function calculateTicketPrice(età, kilometri) {
     let discount = 0
+    let price = kilometri * 0.21
 
-    const price = kilometers * 0.21
-
-
-    if (age < 18) {
-        discount = price * 0.2
+    if (età < 18) {
+        discount = price * 0.21
     }
-    else if (age > 65) {
+    else if (età > 65) {
         discount = price * 0.4
     }
 
-    const FinalPrice = price - discount
-    console.log(FinalPrice.toFixed(2))
-})
+    return price - discount
+}
