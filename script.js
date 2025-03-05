@@ -15,18 +15,17 @@ newTaskElementSend.addEventListener('click', function () {
     console.log(newTaskElementAge.value)
     console.log(newtaskkilometers.value)
     console.log(FinalPrice.toFixed(2))
-
-
-    const price = newtaskkilometers * 0.21
-    let discount = 0
-
-
-    if (newTaskElementAge < 18) {
-        discount = price * 0.2
-    }
-    else if (newTaskElementAge > 65) {
-        discount = price * 0.4
-    }
-
-    const FinalPrice = price - discount
 })
+
+const price = newtaskkilometers * 0.21
+let discount = 0
+
+
+if (newTaskElementAge < 18) {
+    discount = price * 0.2
+}
+else if (newTaskElementAge > 65) {
+    discount = price * 0.4
+}
+
+const FinalPrice = price - discount
