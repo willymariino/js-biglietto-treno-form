@@ -20,7 +20,7 @@ const price = newtaskkilometers * 0.21;
 let discount = 0;
 
 function ticketPrice(ages, kilometers) {
-    let ticketPrice = []
+    let finalticketPrice = []
     if (newTaskElementAge < 18) {
         discount = price * 0.2
     }
@@ -30,7 +30,7 @@ function ticketPrice(ages, kilometers) {
 
 
 
-    return ticketPrice
+    return finalticketPrice
 }
 
 const FinalPrice = price - discount
