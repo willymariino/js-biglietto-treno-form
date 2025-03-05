@@ -11,10 +11,18 @@
 
     <h1>calcola il tuo biglietto</h1>
     <form action="">
-        <input type="text" name="name" placeholder="inserisci it tuo nome" required minlenght="3" maxlength="10"> <br>
-        <input type="text" name="inserisci la tua età" placeholder="inserisci la tua età" required minlenght="3"
+        <label for="new-task-name">inserisci un task</label>
+        <input type="text" id="new-task-name" name="name" placeholder="inserisci it tuo nome" required minlenght="3"
             maxlength="10"> <br>
+
+        <label for="new-task-age">inserisci un task</label>
+        <input type="text" id="new-task-age" name="inserisci la tua età" placeholder="inserisci la tua età" required
+            minlenght="3" maxlength="10"> <br>
+
+        <button type="button" id="send-task"> invia</button>
     </form>
+
+
     <script src="script.js"></script>
 </body>
 
