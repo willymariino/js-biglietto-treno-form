@@ -5,26 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calcolo biglietto treno</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>calcola il tuo biglietto</h1>
-    <form action="">
-        <label for="new-task-name">inserisci it tuo nome</label>
-        <input type="text" id="new-task-name" name="name" placeholder="inserisci it tuo nome"> <br>
+    <main>
 
-        <label for="new-task-age">inserisci la tua età</label>
-        <input type="text" id="new-task-age" name="età" placeholder="inserisci la tua età"> <br>
+        <h1>calcola il tuo biglietto</h1>
+        <form action="">
 
-        <label for="new-task-kilometers">inserisci i kilometri che vuoi percorrere</label>
-        <input type="text" id="new-task-kilometers" name="kilometri"
-            placeholder="inserisci i kilometri che vuoi percorrere"> <br>
+            <div class="container">
+                <div class="label-box">
+                    <label for="new-task-name">inserisci it tuo nome</label> <br>
+                    <label for="new-task-age">inserisci la tua età</label> <br>
+                    <label for="new-task-kilometers">inserisci i kilometri che vuoi percorrere</label>
+                </div>
 
-        <button type="button" id="send-task"> invia</button>
-    </form>
+                <div class="text-box">
+                    <input type="text" id="new-task-name" name="name" placeholder="inserisci it tuo nome"> <br>
+                    <input type="text" id="new-task-age" name="età" placeholder="inserisci la tua età"><br>
+                    <input type="text" id="new-task-kilometers" name="kilometri"
+                        placeholder="inserisci i kilometri che vuoi percorrere">
+                </div>
 
-    <p id="ticket-price"> </p>
+            </div>
+
+            <button type="button" id="send-task"> invia</button>
+        </form>
+
+
+        <p id="ticket-price"> </p>
+
+    </main>
 
     <script src="script.js"></script>
 </body>
