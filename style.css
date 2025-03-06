@@ -74,7 +74,7 @@ h1 {
 }
 
 /* Responsive */
-
+/*  Media query per schermi piccoli (max 480px) */
 @media screen and (max-width: 480px) {
 
     main {
@@ -88,36 +88,45 @@ h1 {
 
     .container {
         flex-direction: column;
-        /* 📌 I label e gli input vanno uno sotto l'altro */
+        /*  Gli elementi vanno in colonna */
         align-items: center;
-        gap: 15px;
+        gap: 10px;
+        width: 100%;
     }
 
     .label-box,
     .text-box {
         width: 100%;
-        /* 📌 Occupano tutta la larghezza */
-        text-align: center;
+        text-align: left;
+        /* Allinea i testi a sinistra */
+        display: flex;
+        flex-direction: column;
+        /*  Mettiamo i label sopra gli input */
+        gap: 5px;
+        padding: 0 20px;
+        /*  Dà spazio ai lati */
     }
 
     .text-box input {
-        width: 90%;
-        /* 📌 Gli input sono più larghi e leggibili */
+        width: 100%;
+        /*  Input più larghi */
         padding: 10px;
         font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
 
     #send-task {
         width: 90%;
-        /* 📌 Il bottone è più largo */
         font-size: 1rem;
         padding: 12px;
+        margin-top: 20px;
     }
 
     .price-list {
         flex-direction: column;
-        /* 📌 Gli sconti vanno in colonna */
         text-align: center;
+        margin-top: 20px;
     }
 
     p#ticket-price {
