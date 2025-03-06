@@ -53,4 +53,6 @@ h1 {
     cursor: pointer;
     margin-top: 20px;
     border-radius: 35px;
+    color: white;
+    transition: all 0.8s;
 }
