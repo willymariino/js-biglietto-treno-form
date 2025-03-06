@@ -67,3 +67,32 @@ h1 {
     color: white;
     transition: all 0.8s;
 }
+
+#send-task:hover {
+    background-color: #1a2f8a;
+
+}
+
+/* Responsive */
+
+@media screen and (max-width: 480px) {
+    main {
+        margin-left: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .text-box {
+        margin-top: 20px;
+    }
+
+    .price-list {
+        flex-direction: column;
+    }
+
+    .label-box {
+        margin-top: 20px;
+    }
+}
