@@ -79,9 +79,14 @@ h1 {
 
 @media (max-width: 480px) {
 
+    main {
+        margin-left: 0;
+    }
+
     /* Forza la visualizzazione verticale SOLO su mobile */
     form {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         gap: 15px;
         /* Distanza tra i gruppi */
