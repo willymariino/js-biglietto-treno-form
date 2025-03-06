@@ -76,23 +76,52 @@ h1 {
 /* Responsive */
 
 @media screen and (max-width: 480px) {
+
     main {
+        padding: 20px;
         margin-left: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
     }
 
     .container {
         flex-direction: column;
+        /* 📌 I label e gli input vanno uno sotto l'altro */
+        align-items: center;
+        gap: 15px;
     }
 
+    .label-box,
     .text-box {
-        margin-top: 20px;
+        width: 100%;
+        /* 📌 Occupano tutta la larghezza */
+        text-align: center;
+    }
+
+    .text-box input {
+        width: 90%;
+        /* 📌 Gli input sono più larghi e leggibili */
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    #send-task {
+        width: 90%;
+        /* 📌 Il bottone è più largo */
+        font-size: 1rem;
+        padding: 12px;
     }
 
     .price-list {
         flex-direction: column;
+        /* 📌 Gli sconti vanno in colonna */
+        text-align: center;
     }
 
-    .label-box {
-        margin-top: 20px;
+    p#ticket-price {
+        font-size: 1.2rem;
+        margin-top: 15px;
     }
 }
