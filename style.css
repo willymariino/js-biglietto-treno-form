@@ -44,3 +44,13 @@ h1 {
     max-width: 600px;
 
 }
+
+#send-task {
+    background-color: #3551f1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 35px;
+}
