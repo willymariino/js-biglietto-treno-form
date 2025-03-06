@@ -27,7 +27,7 @@ newTaskElementSend.addEventListener('click', function () {
     console.log("prezzo del biglietto: €" + FinalPrice.toFixed(2))
 
     //mostra il risultato in pagina
-    ticketPriceElement.textContent = "prezzo del biglietto: €" + FinalPrice.toFixed(2)
+    ticketPriceElement.textContent = newTaskElementName.value + ",  " + " il prezzo del tuo biglietto è: €" + FinalPrice.toFixed(2)
 
 })
 
