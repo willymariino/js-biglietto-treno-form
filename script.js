@@ -38,7 +38,7 @@ function calculateTicketPrice(età, kilometri) {
     let price = kilometri * 0.21
 
     if (età < 18) {
-        discount = price * 0.21
+        discount = price * 0.2
     }
     else if (età > 65) {
         discount = price * 0.4
