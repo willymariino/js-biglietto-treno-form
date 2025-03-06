@@ -75,62 +75,32 @@ h1 {
 
 /* Responsive */
 /*  Media query per schermi piccoli (max 480px) */
-@media screen and (max-width: 480px) {
 
-    main {
-        padding: 20px;
-        margin-left: 0;
-    }
 
-    h1 {
-        font-size: 2rem;
-    }
+@media (max-width: 480px) {
 
-    .container {
-        flex-direction: column;
-        /*  Gli elementi vanno in colonna */
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .label-box,
-    .text-box {
-        width: 100%;
-        text-align: left;
-        /* Allinea i testi a sinistra */
+    /* Forza la visualizzazione verticale SOLO su mobile */
+    form {
         display: flex;
         flex-direction: column;
-        /*  Mettiamo i label sopra gli input */
-        gap: 5px;
-        padding: 0 20px;
-        /*  Dà spazio ai lati */
+        gap: 15px;
+        /* Distanza tra i gruppi */
     }
 
-    .text-box input {
+    /* Separa i label dagli input */
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        /* Facoltativo, migliora la leggibilità */
+    }
+
+    input {
+        display: block;
         width: 100%;
-        /*  Input più larghi */
         padding: 10px;
         font-size: 1rem;
         border: 1px solid #ccc;
         border-radius: 5px;
-    }
-
-    #send-task {
-        width: 90%;
-        font-size: 1rem;
-        padding: 12px;
-        margin-top: 20px;
-    }
-
-    .price-list {
-        flex-direction: column;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    p#ticket-price {
-        font-size: 1.2rem;
-        margin-top: 15px;
     }
 }
