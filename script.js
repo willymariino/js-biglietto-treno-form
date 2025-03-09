@@ -46,3 +46,25 @@ function calculateTicketPrice(età, kilometri) {
 
     return price - discount
 }
+
+const themeToggle = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Controlla se l'utente ha già selezionato il tema scuro in precedenza
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    themeToggle.textContent = "☀️ Light Mode";
+}
+
+// Funzione per cambiare tema
+themeToggle.addEventListener("click", function () {
+    body.classList.toggle("dark-mode");
+
+    if (body.classList.contains("dark-mode")) {
+        themeToggle.textContent = "☀️ Light Mode";
+        localStorage.setItem("theme", "dark");
+    } else {
+        themeToggle.textContent = "🌙 Dark Mode";
+        localStorage.setItem("theme", "light");
+    }
+});

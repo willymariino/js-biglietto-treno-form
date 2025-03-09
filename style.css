@@ -73,6 +73,27 @@ h1 {
 
 }
 
+/* Tema Scuro */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode input,
+.dark-mode button {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+}
+
+.dark-mode #send-task {
+    background-color: #222;
+}
+
+.dark-mode #send-task:hover {
+    background-color: #444;
+}
+
 /* Responsive */
 /*  Media query per schermi piccoli (max 480px) */
 

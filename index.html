@@ -12,47 +12,51 @@
 
 <body>
 
-    <main>
+    <header>
+        <button id="theme-toggle" class="btn btn-dark">🌙 Dark Mode</button>
 
-        <h1>calcola il tuo biglietto</h1>
-        <form action="">
+        <main>
 
-            <div class="container">
-                <div class="label-box">
-                    <label for="new-task-name">inserisci it tuo nome</label> <br>
-                    <label for="new-task-age">inserisci la tua età</label> <br>
-                    <label for="new-task-kilometers">inserisci i kilometri che vuoi percorrere</label>
+            <h1>calcola il tuo biglietto</h1>
+            <form action="">
+
+                <div class="container">
+                    <div class="label-box">
+                        <label for="new-task-name">inserisci it tuo nome</label> <br>
+                        <label for="new-task-age">inserisci la tua età</label> <br>
+                        <label for="new-task-kilometers">inserisci i kilometri che vuoi percorrere</label>
+                    </div>
+
+                    <div class="text-box">
+                        <input type="text" id="new-task-name" name="name" placeholder="inserisci it tuo nome"> <br>
+                        <input type="text" id="new-task-age" name="età" placeholder="inserisci la tua età"><br>
+                        <input type="text" id="new-task-kilometers" name="kilometri"
+                            placeholder="inserisci i kilometri">
+                    </div>
+
                 </div>
 
-                <div class="text-box">
-                    <input type="text" id="new-task-name" name="name" placeholder="inserisci it tuo nome"> <br>
-                    <input type="text" id="new-task-age" name="età" placeholder="inserisci la tua età"><br>
-                    <input type="text" id="new-task-kilometers" name="kilometri" placeholder="inserisci i kilometri">
-                </div>
 
-            </div>
-
-
-            <button type="button" id="send-task"> invia</button>
-            <!-- le cose che aggiungo con bootstap non riesco a collegarle al js 
+                <button type="button" id="send-task"> invia</button>
+                <!-- le cose che aggiungo con bootstap non riesco a collegarle al js 
              se cambio dei tag per mettere quelli di bootstrap, mi si scollegano da javascript-->
 
 
-        </form>
+            </form>
 
-        <div class="price-list">
-            <ul>
-                <li> prezzo ticket: 0,21 per chilometro </li>
-                <li>sconto minorenni: 20% </li>
-                <li> sconto over 65: 40% </li>
-            </ul>
-        </div>
+            <div class="price-list">
+                <ul>
+                    <li> prezzo ticket: 0,21 per chilometro </li>
+                    <li>sconto minorenni: 20% </li>
+                    <li> sconto over 65: 40% </li>
+                </ul>
+            </div>
 
-        <p id="ticket-price"> </p>
+            <p id="ticket-price"> </p>
 
-    </main>
+        </main>
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
